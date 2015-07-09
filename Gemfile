@@ -26,6 +26,20 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+group :development do
+	# Automatic Deployment using Capistrano
+	gem 'capistrano', '~> 3.4.0'
+	gem 'capistrano-rails', '~> 1.1'
+	# require for Phusion Passenger
+	gem 'capistrano-passenger'
+	gem 'capistrano-ssh-doctor', '~> 1.0'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'meta_request' #add RailsPanel extention to chrome browser
+	#gem 'linecache19'
+	#gem 'ruby-debug19'
+	gem 'byebug'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
